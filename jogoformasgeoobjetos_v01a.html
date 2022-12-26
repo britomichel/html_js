@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+	Autor: Michel Brito, 2022
+	Observações:
+	- Jogo para associar as formas geométricas com objetos.
+	- Foi utilizada a Tag IMAGE <MAP> 
+	e um Array Bidimensional para ser utilizado na próxima versão 
+	com pontuação para cada objeto encontrado.
+-->
+<html>
+<head>
+<title>Jogo Formas Geometicas e Objetos (v01 beta)</title>
+<script>
+	let lis_objetos = [
+		["Presente quadrado", false], 
+		["Peça de Dominó retangular", false], 
+		["Retrato quadrado", false], 
+		["Laranja circular", false], 
+		["Tabuleiro quadrado", false], 
+		["Relógio Digital retangular", false], 
+		["Fogão quadrado", false], 
+		["Planeta Terra redondo", false] 
+	];
+	function funcAlertObjeto(iObjeto) {
+		lis_objetos[iObjeto][1] = true;
+		// alert("Você clicou no objeto: " + lis_objetos[iObjeto][0]);
+		document.getElementById("p_mensagem").innerHTML = "Encontrou: " + lis_objetos[iObjeto][0];
+	}
+</script>
+</head>
+
+<h2>IMAGE MAP com Script</h2>
+
+<p>Clique em algumas das <strong>Formas Geométricas</strong> abaixo:
+<br>
+<img src="imgs/objetos_formas_geometricas_2.png" alt="Formas Geométricas" usemap="#formasgeo">
+<map name="formasgeo">
+	<area shape="rect" coords="27,23,102,104" onclick="funcAlertObjeto(0)">
+	<area shape="rect" coords="139,53,231,104" onclick="funcAlertObjeto(1)">
+	<area shape="rect" coords="269,24,350,111" onclick="funcAlertObjeto(2)">
+	<area shape="circle" coords="120,181,34" onclick="funcAlertObjeto(3)">
+	<area shape="rect" coords="225,142,307,221" onclick="funcAlertObjeto(4)">
+	<area shape="rect" coords="37,254,126,300" onclick="funcAlertObjeto(5)">
+	<area shape="rect" coords="148,240,234,326" onclick="funcAlertObjeto(6)">
+	<area shape="circle" coords="309,284,37" onclick="funcAlertObjeto(7)">
+</map>
+</p>
+
+<p id="p_mensagem" style="color:red">Encontrou: ?</p>
+
+</html>
