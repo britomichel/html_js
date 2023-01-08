@@ -1,8 +1,10 @@
 # html_js
+My HTML and JavaScript pratices
+
 <h1 align="center">Hi 👋, I'm Michel Brito</h1>
 <h3 align="center">A passionate developer from Brazil</h3>
 
-- 🔭 I’m currently working on **Java, HTML, CSS, JavaScript, SQL studies**
+- 🔭 I’m currently working on **Java, PHP, HTML, CSS, JavaScript, SQL studies**
 
 - 🌱 I’m currently learning **Java, HTML, CSS, JavaScript, SQL**
 
